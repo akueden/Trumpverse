@@ -26,20 +26,15 @@ const SearchThought = () => {
     }
 
     const searchById = async () => {        
-        if( id != null && id != undefined && id.toString().length >0 && !isNaN(Number(id))){
-            try {
-                const thought = await getThoughtById(parseInt(id));
-                if (thought != null) {
-                    setResult(thought);
-                    console.log(thought);
-                } else {
-                    error();
-                }
-            } catch (e) {
-                console.log("Feil under søk etter id:", e);
+        try {
+            const thought = await getThoughtById(Number(id));
+            if (thought) {
+                setResult(thought);
+            } else {
                 error();
-            } 
-        } else{
+            }
+        } catch (e) {
+            console.log("Feil under søk etter id:", e);
             error();
         }
     }

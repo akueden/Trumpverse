@@ -99,7 +99,6 @@ const UpdateDeleteThought = () => {
             }, 5000);
     };
 
-    // sjekker om et objekt er av typen IAnimal
     function isIThought(obj: any): obj is IThought {
         return obj && typeof obj.id === 'number' && typeof obj.heading === 'string' && typeof obj.content === 'string' && typeof obj.image === 'string' || obj.image === null && typeof obj.category === 'string' ;
     }

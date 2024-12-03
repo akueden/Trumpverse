@@ -1,8 +1,24 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\trump.jpg",
-      "PackagePath": "staticwebassets\\images\\trump.jpg"
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\miffy.jpg",
+      "PackagePath": "staticwebassets\\images\\miffy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\miffy.png",
+      "PackagePath": "staticwebassets\\images\\miffy.png"
+    },
+    {
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\sad_trump.png",
+      "PackagePath": "staticwebassets\\images\\sad_trump.png"
+    },
+    {
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\trump.png",
+      "PackagePath": "staticwebassets\\images\\trump.png"
+    },
+    {
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TrumpverseApi.Microsoft.AspNetCore.StaticWebAssets.props",

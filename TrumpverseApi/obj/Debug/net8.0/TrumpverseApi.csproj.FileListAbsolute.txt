@@ -157,3 +157,4 @@ C:\Users\Emma\OneDrive\Dokumenter\kristiania\H24\Webutvikling\Webutvikling Eksam
 C:\Users\Emma\OneDrive\Dokumenter\kristiania\H24\Webutvikling\Webutvikling Eksamen\TrumpverseApi\obj\Debug\net8.0\TrumpverseApi.genruntimeconfig.cache
 C:\Users\Emma\OneDrive\Dokumenter\kristiania\H24\Webutvikling\Webutvikling Eksamen\TrumpverseApi\obj\Debug\net8.0\ref\TrumpverseApi.dll
 C:\Users\Emma\OneDrive\Dokumenter\kristiania\H24\Webutvikling\Webutvikling Eksamen\TrumpverseApi\bin\Debug\net8.0\TrumpverseApi.staticwebassets.runtime.json
+C:\Users\Emma\OneDrive\Dokumenter\kristiania\H24\Webutvikling\Webutvikling Eksamen\TrumpverseApi\obj\Debug\net8.0\TrumpverseApi.sourcelink.json
