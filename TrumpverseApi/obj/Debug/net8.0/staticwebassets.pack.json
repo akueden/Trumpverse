@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\images\\sad_trump.png"
     },
     {
+      "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\sillyCat.jpg",
+      "PackagePath": "staticwebassets\\images\\sillyCat.jpg"
+    },
+    {
       "Id": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\trump.png",
       "PackagePath": "staticwebassets\\images\\trump.png"
     },

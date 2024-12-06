@@ -90,6 +90,17 @@ const UpdateDeleteThought = () => {
         }
     }
 
+    function isIThought(obj: any): obj is IThought {
+        return obj && typeof obj.id === 'number' && typeof obj.heading === 'string' && typeof obj.content === 'string' && typeof obj.image === 'string' || obj.image === null && typeof obj.category === 'string' ;
+    }
+
+    const deleteThoughtWithContext = () => {
+        deleteThought( parseInt(id) );
+        setMessage(true);
+
+        
+    }
+
     // hjelpefunksjon som håndterer feilmeldinger
     const error = () => {
         setErrorMessage(true);
@@ -97,53 +108,51 @@ const UpdateDeleteThought = () => {
             () => {
                 setErrorMessage(false);
             }, 5000);
-    };
-
-    function isIThought(obj: any): obj is IThought {
-        return obj && typeof obj.id === 'number' && typeof obj.heading === 'string' && typeof obj.content === 'string' && typeof obj.image === 'string' || obj.image === null && typeof obj.category === 'string' ;
-    }
-
-    const deleteThoughtWithContext = () => {
-        deleteThought( parseInt(id) );
     }
 
     return (
-        <section>
-            <header>
-                <h3>Administrer Innleggene dine</h3>
+        <section className='container mt-5'>
+            <header className='row'>
+                <div className='col text-center'>
+                    <h1 className="mb-5">Administrer Innleggene dine</h1>
+                </div>
             </header>
-            <section>
-                <div>
-                    <label>Angi id for hent/slett</label>
-                    <input name='id' type="number" value={id} onChange={handleChange} />
-                    <button onClick={getByIdFromContext}>Hent Innlegg</button>
-                </div>
-                <div>
-                    <label>Overskrift</label>
-                    <input name="heading" type="text" value={heading} onChange={handleChange} />
+            <section className='row justify-content-center mb-5'>
+                <div className='col-md-6'>
+                    <div className="input-group mb-3">
+                        <label>Angi id for hent/slett</label>
+                        <input className='form-control' name='id' type="number" value={id} onChange={handleChange} />
+                        <button className='btn btn-primary' onClick={getByIdFromContext}>Hent Innlegg</button>
+                    </div>
+                    <div className="mb-3">
+                        <label>Overskrift</label>
+                        <input className='form-control' name="heading" type="text" value={heading} onChange={handleChange} />
+                    </div>                
+                    <div className="mb-3">
+                        <label>Innhold</label>
+                        <input className='form-control' name="content" type="text" value={content} onChange={handleChange} />
+                    </div>
+                    <div className="mb-3">
+                        <label>Bilde:</label>
+                        <input className='form-control' name="image" type="file" onChange={handleChange}/> 
+                    </div>
+                    <div className="mb-3">
+                        <label>Kategori</label>
+                        <input className='form-control' name="category" type="text" value={category} onChange={handleChange} />
+                    </div>
+                    <button className='btn btn-success me-2' onClick={updateThoughtWithContext}>Oppdater</button>
+                    <button className='btn btn-danger' onClick={deleteThoughtWithContext}>Slett</button>
                 </div>                
-                <div>
-                    <label>Innhold</label>
-                    <input name="content" type="text" value={content} onChange={handleChange} />
-                </div>
-                <div>
-                    <label>Bilde:</label>
-                    <input name="image" type="file" onChange={handleChange}/> 
-                </div>
-                <div>
-                    <label>Kategori</label>
-                    <input name="category" type="text" value={category} onChange={handleChange} />
-                </div>
-                <button onClick={updateThoughtWithContext}>Oppdater</button>
-                <button onClick={deleteThoughtWithContext}>Slett</button>                
             </section>
-            <section>
-                {
-                    message ? <p>Innlegget ble oppdatert</p> : <></>
-                }
-                {
-                    errorMessage ? <p>Noe galt skjedde</p> : <></>
-                }
+            <section className="mb-3">
+                <div className='row text-center'>
+                    {
+                        message ? <p>Innlegget ble oppdatert</p> : <></>
+                    }
+                    {
+                        errorMessage ? <p>Noe galt skjedde</p> : <></>
+                    }
+                </div>
             </section>
         </section>
     )

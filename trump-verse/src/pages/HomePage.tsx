@@ -2,9 +2,13 @@ import ThoughtList from "../components/Thoughts/ThoughtList";
 
 const HomePage = () => {
     return (
-        <section>
-            <h3>Velkommen til TrumpVerse</h3>
-            <ThoughtList/>
+        <section className="container mt-5">
+            <div className="row justify-content-center">
+                <div className="col-12 text-center">
+                    <h1 className="mb-4">Velkommen til TrumpVerse</h1>
+                </div>
+                    <ThoughtList />
+            </div>
         </section>
     )
 }

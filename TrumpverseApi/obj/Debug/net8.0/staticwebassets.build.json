@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PU7/eb4PMGItEktINKihCqInx7HTj0IXNXK6MWqgnlc=",
+  "Hash": "md9uoYxcvKNYJqQ/Ay3OoKq2iO27Vw+HOCThSkKvufw=",
   "Source": "TrumpverseApi",
   "BasePath": "_content/TrumpverseApi",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sad_trump.png"
+    },
+    {
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\sillyCat.jpg",
+      "SourceId": "TrumpverseApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "BasePath": "_content/TrumpverseApi",
+      "RelativePath": "images/sillyCat.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sillyCat.jpg"
     },
     {
       "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\trump.png",

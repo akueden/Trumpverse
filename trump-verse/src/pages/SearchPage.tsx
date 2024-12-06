@@ -1,6 +1,6 @@
 import SearchThought from "../components/Thoughts/SearchThought";
 
-const UpdateDeletePage = () => {
+const SearchPage = () => {
     return (
         <>
             <SearchThought/>
@@ -8,4 +8,4 @@ const UpdateDeletePage = () => {
     )
 }
 
-export default UpdateDeletePage;
+export default SearchPage;

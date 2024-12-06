@@ -16,6 +16,9 @@ const RegisterThought = () => {
     const [image, setImage] = useState<File | null>(null);
     const [category, setCategory] = useState<string>("");
 
+    const [message, setMessage] = useState<boolean>(false);
+    const [errorMessage, setErrorMessage] = useState<boolean>(false);
+
     useEffect(()=>{
         getThoughtsFromService();
     }, []);
@@ -40,6 +43,10 @@ const RegisterThought = () => {
     }
 
     const registerThought = async () => {
+        if (!heading.trim() && !content.trim() && !category.trim()) {
+            error();
+            return;
+        }
 
         const newThought = {
             heading: heading,
@@ -70,31 +77,49 @@ const RegisterThought = () => {
         }
     }
 
+    const error = () => {
+        setErrorMessage(true);
+        setTimeout(
+            () => {
+                setErrorMessage(false);
+            }, 5000);
+    };
+
     return (
-        <section>
-            <header>
-                <h1>Hva tenker du på i dag....</h1>
+        <section className='container mt-5'>
+            <header className='row'>
+                <div className='col text-center'>
+                    <h1 className="mb-5">Hva tenker du på i dag</h1>
+                </div>
             </header>
-            <section>
-                <div>
-                    <label>Overskrift:</label>
-                    <input name='heading' type="text" value={heading} onChange={handleChange}/>
+            <section className='row justify-content-center mb-5'>
+                <div className='col-md-6'>
+                    <div className='mb-3'>
+                        <label>Overskrift:</label>
+                        <input className='form-control' name='heading' type="text" value={heading} onChange={handleChange}/>
+                    </div>
+                    <div className='mb-3'>
+                        <label>Innhold:</label>
+                        <input className='form-control' name='content' type="text" value={content} onChange={handleChange}/>
+                    </div>
+                    <div className='mb-3'>
+                        <label>Bilde:</label>
+                        <input className='form-control' name='image' type="file" onChange={handleChange}/> 
+                    </div>
+                    <div className='mb-3'>
+                        <label>Kategori:</label>
+                        <input className='form-control' name='category' type="text" value={category} onChange={handleChange}/>
+                    </div>
+                    <button className='btn btn-primary' onClick={registerThought}>Legg ut innlegg</button>
                 </div>
-                <div>
-                    <label>Innhold:</label>
-                    <input name='content' type="text" value={content} onChange={handleChange}/>
-                </div>
-                <div>
-                    <label>Bilde:</label>
-                    <input name="image" type="file" onChange={handleChange}/> 
-                </div>
-                <div>
-                    <label>Kategori:</label>
-                    <input name='category' type="text" value={category} onChange={handleChange}/>
-                </div>
-                <button onClick={registerThought}>Legg ut innlegg</button>
-            </section>     
-            {thought.length > 0 ? <ThoughtList/>:<p>Ingen innlegg å vise...</p>}
+            </section> 
+                <div className='col text-center'>
+                    <h2 className='mb-5'>Tidligere Innlegg</h2> 
+                    {
+                        errorMessage ? <p>Kunne ikke legge til nytt innlegg</p> : <></>
+                    }
+                </div>   
+                    {thought.length > 0 ? <ThoughtList/>:<p>Ingen innlegg å vise...</p>}
         </section>
     )
 }

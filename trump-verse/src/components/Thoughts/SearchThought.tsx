@@ -29,7 +29,7 @@ const SearchThought = () => {
         try {
             const thought = await getThoughtById(Number(id));
             if (thought) {
-                setResult(thought);
+                setResult([thought]);
             } else {
                 error();
             }
@@ -41,9 +41,9 @@ const SearchThought = () => {
 
     const searchByCategory = async () => {
         try {
-            const thought = await getThoughtByCategory(category);
-            if (thought) {
-                setResult(thought);
+            const thoughts = await getThoughtByCategory(category);
+            if (thoughts && Array.isArray(thoughts)) {
+                setResult(thoughts);
             } else {
                 error();
             }
@@ -62,25 +62,31 @@ const SearchThought = () => {
     };
 
     return (
-        <section>
-            <header>
-                <h3>Søk i Innleggene dine</h3>
-            </header>
-            <section>
-                <div>
-                    <label>Søk med id</label>
-                    <input name='id' type="number" value={id} onChange={handleChange} />
-                    <button onClick={searchById}>Søk</button>
+        <section className='container mt-5'>
+            <header className='row'>
+                <div className='col text-center'>
+                    <h1 className=' mb-5'>Søk i Innleggene dine</h1>
                 </div>
-                <div>
-                    <label>Søk med Kategori</label>
-                    <input name='category' type="string" value={category} onChange={handleChange} />
-                    <button onClick={searchByCategory}>Søk</button>
+            </header>
+            <section className='row justify-content-center mb-5'>
+                <div className='col-md-6'>
+                    <div className='input-group mb-3'>
+                        <label>Søk med id</label>
+                        <input className='form-control' name='id' type="number" value={id} onChange={handleChange} />
+                        <button className='btn btn-primary' onClick={searchById}>Søk</button>
+                    </div>
+                    <div className='input-group mb-3'>
+                        <label>Søk med Kategori</label>
+                        <input className='form-control' name='category' type="string" value={category} onChange={handleChange} />
+                        <button className='btn btn-primary' onClick={searchByCategory}>Søk</button>
+                    </div>
                 </div>
             </section>
-            <section>
-                {Array.isArray(result) && result.length > 0 ? (<ThoughtList/>) : (<p>Ingen innlegg å vise...</p>)}
-                {errorMessage && <p>Noe galt skjedde</p>}
+            <section className='mb-3'>
+                <div className='row text-center'>
+                    {Array.isArray(result) && result.length > 0 ? (<ThoughtList/>) : (<p>Ingen innlegg å vise...</p>)}
+                    {errorMessage && <p>Noe galt skjedde</p>}
+                </div>
             </section>
         </section>
     )
