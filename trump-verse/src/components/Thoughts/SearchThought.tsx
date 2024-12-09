@@ -10,7 +10,7 @@ const SearchThought = () => {
 
     const [id, setId] = useState<string>("");
     const [category, setCategory] = useState<string>("");
-    const [result, setResult] = useState<IThought | IThought[] | null>(null);
+    const [result, setResult] = useState<IThought[]>([]);
     
     const [errorMessage, setErrorMessage] = useState<boolean>(false);
 
@@ -27,9 +27,9 @@ const SearchThought = () => {
 
     const searchById = async () => {        
         try {
-            const thought = await getThoughtById(Number(id));
-            if (thought) {
-                setResult([thought]);
+            const thoughts = await getThoughtById(Number(id));
+            if (thoughts) {
+                setResult([thoughts]);
             } else {
                 error();
             }
@@ -65,28 +65,26 @@ const SearchThought = () => {
         <section className='container mt-5'>
             <header className='row'>
                 <div className='col text-center'>
-                    <h1 className=' mb-5'>Søk i Innleggene dine</h1>
+                    <h1 className=' mb-5'>Search after posts</h1>
                 </div>
             </header>
             <section className='row justify-content-center mb-5'>
                 <div className='col-md-6'>
                     <div className='input-group mb-3'>
-                        <label>Søk med id</label>
+                        <label>Search with id:</label>
                         <input className='form-control' name='id' type="number" value={id} onChange={handleChange} />
-                        <button className='btn btn-primary' onClick={searchById}>Søk</button>
+                        <button className='btn btn-primary' onClick={searchById}>Search</button>
                     </div>
                     <div className='input-group mb-3'>
-                        <label>Søk med Kategori</label>
+                        <label>Search with category:</label>
                         <input className='form-control' name='category' type="string" value={category} onChange={handleChange} />
-                        <button className='btn btn-primary' onClick={searchByCategory}>Søk</button>
+                        <button className='btn btn-primary' onClick={searchByCategory}>Search</button>
                     </div>
                 </div>
             </section>
             <section className='mb-3'>
-                <div className='row text-center'>
-                    {Array.isArray(result) && result.length > 0 ? (<ThoughtList/>) : (<p>Ingen innlegg å vise...</p>)}
-                    {errorMessage && <p>Noe galt skjedde</p>}
-                </div>
+                    {errorMessage && <p>Something wrong happened</p>}
+                    {Array.isArray(result) && result.length > 0 ? (<ThoughtList/>) : (<p>No posts to show...</p>)}
             </section>
         </section>
     )

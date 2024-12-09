@@ -89,37 +89,37 @@ const RegisterThought = () => {
         <section className='container mt-5'>
             <header className='row'>
                 <div className='col text-center'>
-                    <h1 className="mb-5">Hva tenker du på i dag</h1>
+                    <h1 className="mb-5">Create a new post</h1>
                 </div>
             </header>
             <section className='row justify-content-center mb-5'>
                 <div className='col-md-6'>
                     <div className='mb-3'>
-                        <label>Overskrift:</label>
+                        <label>Heading:</label>
                         <input className='form-control' name='heading' type="text" value={heading} onChange={handleChange}/>
                     </div>
                     <div className='mb-3'>
-                        <label>Innhold:</label>
+                        <label>Content:</label>
                         <input className='form-control' name='content' type="text" value={content} onChange={handleChange}/>
                     </div>
                     <div className='mb-3'>
-                        <label>Bilde:</label>
-                        <input className='form-control' name='image' type="file" onChange={handleChange}/> 
-                    </div>
-                    <div className='mb-3'>
-                        <label>Kategori:</label>
+                        <label>Category:</label>
                         <input className='form-control' name='category' type="text" value={category} onChange={handleChange}/>
                     </div>
-                    <button className='btn btn-primary' onClick={registerThought}>Legg ut innlegg</button>
+                    <div className='mb-3'>
+                        <label>Image:</label>
+                        <input className='form-control' name='image' type="file" onChange={handleChange}/> 
+                    </div>
+                    <button className='btn btn-primary' onClick={registerThought}>Post</button>
                 </div>
             </section> 
                 <div className='col text-center'>
-                    <h2 className='mb-5'>Tidligere Innlegg</h2> 
+                    <h2 className='mb-5'>Previous posts</h2> 
+                </div>      
                     {
-                        errorMessage ? <p>Kunne ikke legge til nytt innlegg</p> : <></>
-                    }
-                </div>   
-                    {thought.length > 0 ? <ThoughtList/>:<p>Ingen innlegg å vise...</p>}
+                        errorMessage ? <p>Could not add new post</p> : <></>
+                    }   
+                    {thought.length > 0 ? <ThoughtList/>:<p>No posts to show...</p>}
         </section>
     )
 }

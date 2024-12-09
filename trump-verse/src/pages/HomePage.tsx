@@ -5,7 +5,7 @@ const HomePage = () => {
         <section className="container mt-5">
             <div className="row justify-content-center">
                 <div className="col-12 text-center">
-                    <h1 className="mb-4">Velkommen til TrumpVerse</h1>
+                    <h1 className="mb-4">Make Blogging Great Again</h1>
                 </div>
                     <ThoughtList />
             </div>

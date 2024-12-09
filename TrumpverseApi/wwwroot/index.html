@@ -3,11 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Web API Dokumentasjon</title>
 </head>
-
 <body>
+    <section>
+        <header>
+            <h1>Api Dokumentasjon</h1>
+        </header>
+        <section>
+            <div class="container">
+                <h3>Introduksjon</h3>
+                <p>Denne dokumentasjonssiden er laget for å hjelpe deg med å forstå og bruke TrumpverseApi-et. Api-et gir omfattende
+                CRUD-funksjonalitet for å administrere "thoughts" og tilhørende data. Alle forespørsler håndteres over HTTPS, og svar
+                returneres i JSON-format.</p>
+                <p>TrumpverseApi-et tilbyr følgende nøkkelfunksjoner:</p>
+                    <ul>
+                        <li>Hente alle "thoughts" eller filtrere etter ID eller kategori.</li>
+                        <li>Opprette, oppdatere eller slette "thoughts" med enkle forespørsler.</li>
+                        <li>Feilhåndtering med HTTP-statuskoder.</li>
+                    </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Thoughts</h1>
+                <p>Det er totalt 8 thoughts sortert etter Id.</p>
 
+                <h3>Thoughts schema</h3>
+                <table>
+                    <tr>
+                        <th>Key</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Id</td>
+                        <td>Int</td>
+                        <td>Id til Innlegget</td>
+                    </tr>
+                    <tr>
+                        <td>Heading</td>
+                        <td>String</td>
+                        <td>Overskriften til Innlegget</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>String</td>
+                        <td>Innholdet til innlegget</td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>String</td>
+                        <td>Kategorien til Innlegget</td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td>String</td>
+                        <td>Bildet til innlegget</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h1>CRUD</h1>
+
+            <div class="container">
+                <h3>Get all thoughts</h3>
+                <p>Metode: GET</p>
+                <p>Henter en liste over alle innlegg/thoughts.</p>
+                <p>Endepunkt: api/Thought</p>
+            </div>
+            <div class="container">
+                <h3>Get a single thought by Id</h3>
+                <p>Metode: GET</p>
+                <p>Henter et innlegg ved å bruke id som et parameter.</p>
+                <p>Endepunkt: api/Thoughts/{Id}</p>
+            </div>
+            <div class="container">
+                <h3>Get thought by category</h3>
+                <p>Metode: GET</p>
+                <p>Henter alle innlegg/thought basert på kategori.</p>
+                <p>Endepunkt: api/Thought/GetByCategory/{category}</p>
+            </div>
+            <div class="container">
+                <h3>Create new thought</h3>
+                <p>Metode: POST</p>
+                <p>Opretter et nytt innlegg/thought.</p>
+                <p>Endepunkt: api/Thought</p>
+            </div>
+            <div class="container">
+                <h3>Update new thought</h3>
+                <p>Metode: PUT</p>
+                <p>Opptaderer et eksisterende innlegg/thought.</p>
+                <p>Endepunkt: api/Thought</p>
+            </div>
+            <div class="container">
+                <h3>Delete thought by Id</h3>
+                <p>Metode: DELETE</p>
+                <p>Sletter et innlegg/thought basert på Id.</p>
+                <p>Endepunkt: api/Thought/{Id}</p>
+            </div>
+            <div class="container">
+                <h3>Image Upload</h3>
+                <p>Metode: POST</p>
+                <p>Laster opp bilder til serveren.</p>
+                <p>Endepunkt: api/ImageUpload</p>
+            </div>
+            <div class="container">
+                <h1>Feilhåndtering</h1> 
+                <p>Alle endrepunktene returnerer statuskode 500 InternalServerError ved error.</p>
+                <pre>
+                    {
+                        "error": "Noe gikk galt"
+                    }
+                </pre>
+            </div>
+        </section>
+    </section>
 </body>
-
 </html>

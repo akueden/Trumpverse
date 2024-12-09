@@ -10,7 +10,7 @@ using TrumpverseApi.Contexts;
 namespace TrumpverseApi.Migrations
 {
     [DbContext(typeof(ThoughtContext))]
-    [Migration("20241130110438_V1")]
+    [Migration("20241207233125_V1")]
     partial class V1
     {
         /// <inheritdoc />

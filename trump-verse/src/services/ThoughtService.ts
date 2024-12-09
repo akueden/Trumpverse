@@ -5,10 +5,10 @@ const ThoughtService = (()=>{
 
     const thoughtControllerEndpoint = "http://localhost:5080/api/thought/";
     const imageUploadControllerEndpoint = "http://localhost:5080/api/imageUpload";
-    const gameImageEndpoint = "http://localhost:5080/images/";
+    const thoughtImageEndpoint = "http://localhost:5080/images/";
     const categoryControllerEndpoint = "http://localhost:5080/api/thought/getByCategory/";
 
-    const getAll = async () : Promise<{ success: boolean; data: IThought[] | string}> => {    
+    const getAll = async () : Promise<{ success: boolean; data: IThought[] | string}> => { 
         try{
             const result = await axios.get(thoughtControllerEndpoint);
             return {success: true, data: result.data as IThought[]};
@@ -94,7 +94,7 @@ const ThoughtService = (()=>{
     }
 
     const getImageEndpoint = () => {
-        return gameImageEndpoint
+        return thoughtImageEndpoint
     }
 
     return{

@@ -14,6 +14,7 @@ const UpdateDeleteThought = () => {
     const [category, setCategory] = useState<string>("");
 
     const [message, setMessage] = useState<boolean>(false);
+    const [deleteMessage, setDeleteMessage] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<boolean>(false);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -66,7 +67,17 @@ const UpdateDeleteThought = () => {
         } 
     }
 
-    const updateThoughtWithContext = async () => {
+    // hjelpefunkjson for å unngå repetiasjon av kode
+    const validInput = (id: number, heading: string, content: string, category: string) : boolean=> {
+        return (!isNaN(Number(id)) && id > 0 && !!heading.trim() && !!content.trim() && !!category.trim());
+    }
+
+    const updateThoughtWithContext = async () => {   
+        if(!validInput(Number(id), heading, content, category)){
+            error();
+            return;
+        }
+        
         const thoughtToUpdate : IThought = {
             id: parseInt(id),
             heading: heading,
@@ -88,6 +99,7 @@ const UpdateDeleteThought = () => {
         }else{
             error();
         }
+        
     }
 
     function isIThought(obj: any): obj is IThought {
@@ -95,10 +107,24 @@ const UpdateDeleteThought = () => {
     }
 
     const deleteThoughtWithContext = () => {
-        deleteThought( parseInt(id) );
-        setMessage(true);
-
+        if(!validInput(Number(id), heading, content, category)){
+            error();
+            return;
+        }
         
+        try{
+            deleteThought( parseInt(id) );
+            setDeleteMessage(true);
+            setTimeout(
+                () => {
+                    setDeleteMessage(false)
+                }, 
+                5000
+            );
+            console.log("Sletting vellykket.");
+        } catch(e){
+            error();
+        }  
     }
 
     // hjelpefunksjon som håndterer feilmeldinger
@@ -114,45 +140,48 @@ const UpdateDeleteThought = () => {
         <section className='container mt-5'>
             <header className='row'>
                 <div className='col text-center'>
-                    <h1 className="mb-5">Administrer Innleggene dine</h1>
+                    <h1 className="mb-5">Manage your posts</h1>
                 </div>
             </header>
             <section className='row justify-content-center mb-5'>
                 <div className='col-md-6'>
                     <div className="input-group mb-3">
-                        <label>Angi id for hent/slett</label>
+                        <label>Enter Id for update/delete:</label>
                         <input className='form-control' name='id' type="number" value={id} onChange={handleChange} />
-                        <button className='btn btn-primary' onClick={getByIdFromContext}>Hent Innlegg</button>
+                        <button className='btn btn-primary' onClick={getByIdFromContext}>Get posts</button>
                     </div>
                     <div className="mb-3">
-                        <label>Overskrift</label>
+                        <label>Heading:</label>
                         <input className='form-control' name="heading" type="text" value={heading} onChange={handleChange} />
                     </div>                
                     <div className="mb-3">
-                        <label>Innhold</label>
+                        <label>Content:</label>
                         <input className='form-control' name="content" type="text" value={content} onChange={handleChange} />
                     </div>
                     <div className="mb-3">
-                        <label>Bilde:</label>
-                        <input className='form-control' name="image" type="file" onChange={handleChange}/> 
-                    </div>
-                    <div className="mb-3">
-                        <label>Kategori</label>
+                        <label>Category:</label>
                         <input className='form-control' name="category" type="text" value={category} onChange={handleChange} />
                     </div>
-                    <button className='btn btn-success me-2' onClick={updateThoughtWithContext}>Oppdater</button>
-                    <button className='btn btn-danger' onClick={deleteThoughtWithContext}>Slett</button>
+                    <div className="mb-3">
+                        <label>Image:</label>
+                        <input className='form-control' name="image" type="file" onChange={handleChange}/> 
+                    </div>
+                    <button className='btn btn-success me-2' onClick={updateThoughtWithContext}>Update</button>
+                    <button className='btn btn-danger' onClick={deleteThoughtWithContext}>Delete</button>
                 </div>                
             </section>
             <section className="mb-3">
-                <div className='row text-center'>
+                <div className='container'>
                     {
-                        message ? <p>Innlegget ble oppdatert</p> : <></>
+                        message ? <p>The post was updated</p> : <></>
                     }
                     {
-                        errorMessage ? <p>Noe galt skjedde</p> : <></>
+                        deleteMessage ? <p>The post was deleted</p> : <></>
+                    }    
+                    {
+                        errorMessage ? <p>Something wrong happened</p> : <></>
                     }
-                </div>
+                </div>    
             </section>
         </section>
     )

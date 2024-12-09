@@ -2,16 +2,16 @@ import {Link} from 'react-router-dom';
 
 const MainNavigation = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div className="container-fluid">
-            <ul className="navbar-nav me-auto">
-                <li className="nav-item"><Link className="nav-link" to="/">Hjem</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="register">Legge ut innlegg</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="update-delete">Administrer Innlegg</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="search">Søk etter Innlegg</Link></li>
+        <header className='navbar'>
+        <nav>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="register">Create a new post</Link></li>
+                <li><Link to="update-delete">Manage your posts</Link></li>
+                <li><Link to="search">Search after posts</Link></li>
             </ul>
-            </div>
         </nav>
+        </header>
     )
 }
 
