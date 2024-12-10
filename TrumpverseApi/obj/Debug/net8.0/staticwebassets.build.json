@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "md9uoYxcvKNYJqQ/Ay3OoKq2iO27Vw+HOCThSkKvufw=",
+  "Hash": "0upN8HHkoJPm5wBSNvsvSZtWg6VDOL2Tdxj5FQb6fG4=",
   "Source": "TrumpverseApi",
   "BasePath": "_content/TrumpverseApi",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\miffy.jpg",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\css\\index.css",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
-      "RelativePath": "images/miffy.jpg",
+      "RelativePath": "css/index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\miffy.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\miffy.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\climate-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
-      "RelativePath": "images/miffy.png",
+      "RelativePath": "images/climate-trump.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,15 +52,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\miffy.png"
+      "OriginalItemSpec": "wwwroot\\images\\climate-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\sad_trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\epic-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
-      "RelativePath": "images/sad_trump.png",
+      "RelativePath": "images/epic-trump.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,15 +71,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\sad_trump.png"
+      "OriginalItemSpec": "wwwroot\\images\\epic-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\sillyCat.jpg",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\goofy-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
-      "RelativePath": "images/sillyCat.jpg",
+      "RelativePath": "images/goofy-trump.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\sillyCat.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\goofy-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\mewing-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
-      "RelativePath": "images/trump.png",
+      "RelativePath": "images/mewing-trump.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\trump.png"
+      "OriginalItemSpec": "wwwroot\\images\\mewing-trump.png"
+    },
+    {
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\unstoppable-trump.png",
+      "SourceId": "TrumpverseApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "BasePath": "_content/TrumpverseApi",
+      "RelativePath": "images/unstoppable-trump.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\unstoppable-trump.png"
     },
     {
       "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\index.html",
