@@ -2,18 +2,19 @@ import { useContext } from "react";
 import { ThoughtContext } from "../../contexts/ThoughtContext";
 import IThoughtContext from "../../interfaces/IThoughtContext";
 import ThoughtItem from "./ThoughtItem";
+import IThought from "../../interfaces/IThought";
 
-const ThoughtList = () => {
+const ThoughtList  = () => {
 
     const {thoughts} = useContext(ThoughtContext) as IThoughtContext;
 
     const createAndGetThoughtJSX = () => {
-        if (thoughts.length === 0){
+        if (!thoughts || thoughts.length === 0){
             console.error("Thoughts er ikke en array:", thoughts);
             return <p>Ingen innlegg å vise...</p>;
         }
         
-        const thoughtJSX = thoughts.map( (thought, index) => {
+        const thoughtJSX = thoughts.map( (thought: IThought, index: number) => {
             return (
                 <ThoughtItem
                     key={"thought" + index}

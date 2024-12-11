@@ -3639,11 +3639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\TrumpverseApi.csproj",
+      "projectUniqueName": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\TrumpverseApi.csproj",
       "projectName": "TrumpverseApi",
-      "projectPath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\TrumpverseApi.csproj",
+      "projectPath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\TrumpverseApi.csproj",
       "packagesPath": "C:\\Users\\Emma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\Webutvikling Eksamen\\TrumpverseApi\\obj\\",
+      "outputPath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emma\\AppData\\Roaming\\NuGet\\NuGet.Config"

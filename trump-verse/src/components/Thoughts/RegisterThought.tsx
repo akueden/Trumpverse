@@ -16,7 +16,6 @@ const RegisterThought = () => {
     const [image, setImage] = useState<File | null>(null);
     const [category, setCategory] = useState<string>("");
 
-    const [message, setMessage] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<boolean>(false);
 
     useEffect(()=>{

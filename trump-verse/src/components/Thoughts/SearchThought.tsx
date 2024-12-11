@@ -2,7 +2,7 @@ import {useContext, ChangeEvent, useState} from 'react'
 import { ThoughtContext } from '../../contexts/ThoughtContext'
 import IThought from '../../interfaces/IThought'
 import IThoughtContext from '../../interfaces/IThoughtContext'
-import ThoughtList from './ThoughtList'
+import ThoughtService from '../../services/ThoughtService'
 
 const SearchThought = () => {
 
@@ -83,8 +83,19 @@ const SearchThought = () => {
                 </div>
             </section>
             <section className='mb-3'>
-                    {errorMessage && <p>Something wrong happened</p>}
-                    {Array.isArray(result) && result.length > 0 ? (<ThoughtList/>) : (<p>No posts to show...</p>)}
+                {errorMessage && <p>Something wrong happened</p>}
+                {Array.isArray(result) ? (result.length > 0 ? (
+                    <div>
+                        {result.map( (thought, index) => (
+                            <div key={"thought" + index}>
+                                <h3>{thought.heading}</h3>
+                                <p>{thought.content}</p>
+                                <p>Category: {thought.category}</p>
+                                {thought.image && (<img src={ThoughtService.getImageEndpoint() + thought.image} className="img-fluid"/>)}
+                            </div>
+                        ))}
+                    </div>
+                    ) : (<p>No posts to show...</p>)) : null}
             </section>
         </section>
     )

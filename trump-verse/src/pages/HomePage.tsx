@@ -7,7 +7,7 @@ const HomePage = () => {
                 <div className="col-12 text-center">
                     <h1 className="mb-4">Make Blogging Great Again</h1>
                 </div>
-                    <ThoughtList />
+                    <ThoughtList/>
             </div>
         </section>
     )
