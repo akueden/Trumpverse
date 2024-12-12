@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "885Bwck05xE=",
+  "dgSpecHash": "CTrZLQlivBI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\TrumpverseApi.csproj",
+  "projectFilePath": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\TrumpverseApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emma\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Emma\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

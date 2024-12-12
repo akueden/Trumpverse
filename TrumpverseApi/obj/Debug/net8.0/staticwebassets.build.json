@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PagBBqLdotnps4JX9xVjUpC1ibm6XkSZixIAglGuhX4=",
+  "Hash": "MujIdNv7hr8p9ZwNuAS1cHz09dCCK0rLRmhqtGyfe64=",
   "Source": "TrumpverseApi",
   "BasePath": "_content/TrumpverseApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TrumpverseApi\\wwwroot",
       "Source": "TrumpverseApi",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\css\\index.css",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\css\\index.css",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\climate-trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\images\\climate-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "images/climate-trump.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\climate-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\epic-trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\images\\epic-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "images/epic-trump.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\epic-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\goofy-trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\images\\goofy-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "images/goofy-trump.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\goofy-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\mewing-trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\images\\mewing-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "images/mewing-trump.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mewing-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\images\\unstoppable-trump.png",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\images\\unstoppable-trump.png",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "images/unstoppable-trump.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\unstoppable-trump.png"
     },
     {
-      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\index.html",
       "SourceId": "TrumpverseApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 Webutvikling Eksamen\\TrumpverseApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Emma\\OneDrive\\Dokumenter\\kristiania\\H24\\Webutvikling\\DS3103 web eksamen\\kode\\TrumpverseApi\\wwwroot\\",
       "BasePath": "_content/TrumpverseApi",
       "RelativePath": "index.html",
       "AssetKind": "All",

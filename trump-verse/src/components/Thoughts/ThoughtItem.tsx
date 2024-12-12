@@ -4,7 +4,7 @@ import ThoughtService from "../../services/ThoughtService";
 
 const ThoughtItem : FC<IThought> = ({heading, content, image, category}) => {
     return (
-        <article className='row row mb-4'> 
+        <article className='row mb-4'> 
             <div className='col-lg-8 col-md-10 mx-auto'>  
                 <h3>{heading}</h3>
                 <p>{content}</p>

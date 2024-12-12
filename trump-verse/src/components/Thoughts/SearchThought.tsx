@@ -87,12 +87,14 @@ const SearchThought = () => {
                 {Array.isArray(result) ? (result.length > 0 ? (
                     <div>
                         {result.map( (thought, index) => (
-                            <div key={"thought" + index}>
-                                <h3>{thought.heading}</h3>
-                                <p>{thought.content}</p>
-                                <p>Category: {thought.category}</p>
-                                {thought.image && (<img src={ThoughtService.getImageEndpoint() + thought.image} className="img-fluid"/>)}
-                            </div>
+                            <article className='row mb-4'>
+                                <div className='col-lg-8 col-md-10 mx-auto' key={"thought" + index}>
+                                    <h3>{thought.heading}</h3>
+                                    <p>{thought.content}</p>
+                                    <p>Category: {thought.category}</p>
+                                    {thought.image && (<img src={ThoughtService.getImageEndpoint() + thought.image} className="img-fluid"/>)}
+                                </div>
+                            </article>
                         ))}
                     </div>
                     ) : (<p>No posts to show...</p>)) : null}

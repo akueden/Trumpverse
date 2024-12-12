@@ -16,6 +16,7 @@ const RegisterThought = () => {
     const [image, setImage] = useState<File | null>(null);
     const [category, setCategory] = useState<string>("");
 
+    const [message, setMessage] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<boolean>(false);
 
     useEffect(()=>{
@@ -56,6 +57,14 @@ const RegisterThought = () => {
         
         postThought(newThought, image);
         await getThoughtsFromService(); 
+        
+        setMessage(true);
+        setTimeout(
+            () => {
+                setMessage(false);
+            },
+            5000
+        );
     }
 
     const getThoughtsFromService = async () => {
@@ -117,7 +126,10 @@ const RegisterThought = () => {
                 </div>      
                     {
                         errorMessage ? <p>Could not add new post</p> : <></>
-                    }   
+                    } 
+                    {
+                        message ? <p>New post published</p> : <></>
+                    }  
                     {thought.length > 0 ? <ThoughtList/>:<p>No posts to show...</p>}
         </section>
     )

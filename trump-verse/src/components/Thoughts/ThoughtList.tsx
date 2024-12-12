@@ -9,7 +9,7 @@ const ThoughtList  = () => {
     const {thoughts} = useContext(ThoughtContext) as IThoughtContext;
 
     const createAndGetThoughtJSX = () => {
-        if (!thoughts || thoughts.length === 0){
+        if (thoughts.length === 0){
             console.error("Thoughts er ikke en array:", thoughts);
             return <p>Ingen innlegg å vise...</p>;
         }
