@@ -1,4 +1,4 @@
-Om eksamens oppgaven: 
+Om eksamensoppgaven: 
 
 Vi ble tildelt en fiktiv case der man skulle lage en fullstack-applikasjon til Trump som skulle samle informasjon gitt av Trump. Oppgaven gikk ut på å utvikle en fullstack webapplikasjon bestående av en frontend i React og en backend i .NET/C# med en SQLite-database. Løsningen skulle implementere full CRUD-funksjonalitet (Create, Read, Update, Delete), og det ble lagt vekt på universell utforming, responsivt design og kodekvalitet. 
 
