@@ -20,6 +20,6 @@ Teknikker:
 
 Universell Utforming:
 
-For å oppfylle kravene til universell utforming har jeg sørget for at nettsiden er forståelig og brukervennlig. Nettsiden min har en enkel og intuitiv struktur som gjør navigasjonen brukervennlig. Jeg har valgt en mørk blå bakgrunnsfarge med hvit tekst for å sikre god lesbarhet, takket være den sterke kontrasten mellom fargene. For å gjøre nettsiden mer forståelig har jeg brukt semantiske HTML-elementer som "<h1>" og "<section>". "<h1>" markerer hovedoverskriften, mens "<section>" organiserer innholdet i logiske grupper.
+For å oppfylle kravene til universell utforming har jeg sørget for at nettsiden er forståelig og brukervennlig. Nettsiden min har en enkel og intuitiv struktur som gjør navigasjonen brukervennlig. Jeg har valgt en mørk blå bakgrunnsfarge med hvit tekst for å sikre god lesbarhet, takket være den sterke kontrasten mellom fargene. For å gjøre nettsiden mer forståelig har jeg brukt semantiske HTML-elementer som "h1" og "section". "h1" markerer hovedoverskriften, mens "section" organiserer innholdet i logiske grupper.
 Nettsiden er responsiv, slik at den ser bra ut og fungerer optimalt uavhengig av enhet. I tillegg har jeg implementert tydelig brukerrespons, som visuell tilbakemelding ved hovering og klikk på knapper, samt informative meldinger ved riktige eller feil handlinger. 
 
